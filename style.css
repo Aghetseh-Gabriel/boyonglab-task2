@@ -1,10 +1,10 @@
 body {
+HEAD
   font-family: Arial, sans-serif;
   background: #f2f2f2;
   margin: 0;
   padding: 0;
 }
-
 .form-container {
   background: black;
   color: blue;
@@ -20,12 +20,10 @@ body {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 h2 {
  
   margin-bottom: 20px;
 }
-
 .form-group {
   margin-bottom: 15px;
   display: flex;
@@ -66,3 +64,70 @@ button:hover {
   }
 }
 </style>7h
+=======
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.form-container {
+  background-color: black;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  width: 90%;
+  max-width: 400px;
+}
+
+h2 {
+  color: deepskyblue;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  background-color: dimgray;
+  color: white;
+}
+
+input::placeholder {
+  color: silver;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: deepskyblue;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: deepskyblue;
+}
+
+@media (max-width: 400px) {
+  .form-container {
+    padding: 20px;
+  }
+
+  input[type="submit"] {
+    font-size: 14px;
+  }
+}
+>>>>>>> d6e9184467855152e59771c50d16663929f91797
