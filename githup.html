@@ -28,8 +28,6 @@
   <script>
     document.getElementById("registrationForm").addEventListener("submit", function(e) {
       e.preventDefault(); // Prevent actual form submission
-
-   // Collect values
       const name = document.getElementById("fullname").value.trim();
       const email = document.getElementById("email").value.trim();
       const gender = document.getElementById("gender").value;
@@ -37,20 +35,13 @@
       const password = document.getElementById("password").value;
 
       const message = document.getElementById("message");
-
-      // Simple validation
       if (!name || !email || !gender || !dob || !password) {
         message.textContent = "❌ Please fill in all the fields!";
         message.style.color = "red";
         return;
       }
-
-      // Simulate successful submission
       message.textContent = "✅ Form submitted successfully!";
       message.style.color = "green";
-
-      // Optionally reset the form
-      // this.reset();
     });
   </script>
 </body>
