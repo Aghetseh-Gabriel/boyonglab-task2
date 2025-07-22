@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+
+    <style>
+* {
+box-sizing: border-box;
+margin: 0%;
+padding: 0%;
+}
+body{
+   font-family: 'Segoe UI',  sans-serif; 
+   background: #f0f2f5;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+   min-height: 100vh;
+}
+.favour {
+background-attachment: #7f9ef2;
+padding: 25px;
+border-radius: 10px;
+box-shadow:0 4px 10px rgba(0, 0, 0, 0.1) ;
+width: 100%;
+max-width: 500px;
+background-color:#003559;
+}
+
+.favour h1 {
+text-align: center;
+margin-bottom: 20px;
+color:white;
+}
+
+.form_group{
+    margin-bottom: 15px;
+}
+
+label{
+    display:block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color:white;
+}
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="password"],
+select{
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+
+}
+
+input:focus,
+select:focus {
+    border-color: #007bff;
+    outline: none;
+
+
+}
+
+.submit_btn{
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.submit_btn:hover{
+    background-color: #0056b3;
+
+}
+@media (max-width: 480px)
+{
+.favour{padding: 20px;
+}
+
+input,
+select{
+    font-size: 16px;
+}
+.submit_btn{
+    font-size: 17px;
+}
+}   
+ </style>
+
+
+</head>
+<body>
+    <div class="favour">
+        <h1>form 1</h1>
+
+        <form action="" method="post">
+
+            <div class="form_group">
+                <label for="USERNAME">USERNAME</label>
+                <input type="text" id="USERNAME" placeholder="enter username" required>
+            </div>
+
+<div class="form_group">
+<label for="DOB">DATE OF BIRTH</label>
+<input type="date" id="DOB" required>
+</div>
+
+<div class="form_group">
+    <label for="EMAIL">EMAIL</label>
+    <input type="email"  id="EMAIL" placeholder="enter email" required>
+
+</div>
+
+<div class="form_group">
+<label for="gender">GENDER</label>
+<select  id="gender">
+    <option value="">select gender </option>
+    <option>MALE</option>
+    <option >FEMALE</option>
+    <option > OTHER</option>
+</select>
+</div>
+<div class="form_group">
+    <label for="PASSWORD">PASSWORD</label>
+    <input type="password"  id="PASSWORD" placeholder="enter password" required>
+</div>
+<button type="submit" class="submit_btn">submit</button>
+        </form>
+    </div>
+</body>
+</html>
